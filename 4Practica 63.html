@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<!--esta es mi practica 63-->
+
+<head>
+    <title>Practica 63</title>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+
+    <div id="num">2</div>
+    <script>
+        addEventListener('DOMContentLoaded', start, false);
+
+        function start() {
+            document.getElementById('num').addEventListener('dblclick', duplicar, false);
+        }
+
+        function duplicar() {
+            var valu;
+            var result;
+            valu = document.getElementById('num').innerHTML;
+            valu = parseInt(valu);
+            result = valu * 2;
+            document.getElementById('num').innerHTML = result;
+
+        }
+    </script>
+
+</body>
+
+</html>
